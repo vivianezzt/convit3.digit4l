@@ -16,7 +16,9 @@ export default function Logo() {
           <div>
             CONVIT<span className="text-blue-500">3</span>
           </div>
-          <div>DIGITAL</div>
+          <div>
+            DIGIT<span className="text-blue-500">4</span>L
+          </div>
         </h1>
       </Link>
     </div>
