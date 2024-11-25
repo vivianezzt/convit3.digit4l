@@ -16,7 +16,8 @@ export default function LogoGrande() {
       >
         <Image src="/logo.svg" alt="Logo" width={100} height={100} />
         <h1 className="text-5xl">
-          CONVIT<span className="text-blue-500">3</span> DIGITAL
+          CONVIT<span className="text-blue-500">3</span> DIGIT
+          <span className="text-blue-500">4</span>L
         </h1>
       </Link>
     </div>
