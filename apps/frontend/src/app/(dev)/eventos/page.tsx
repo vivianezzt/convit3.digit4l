@@ -1,7 +1,7 @@
-import { eventos } from '@/core';
-import Image from 'next/image';
-import Link from 'next/link';
-import QRCode from 'react-qr-code';
+import { eventos } from "core";
+import Image from "next/image";
+import Link from "next/link";
+import QRCode from "react-qr-code";
 
 export default function PaginaEventos() {
   return (
@@ -9,8 +9,10 @@ export default function PaginaEventos() {
       {eventos.map((evento) => (
         <div
           key={evento.id}
-          className="flex flex-col
-           w-full overflow-hidden bg-zinc-800 rounded-lg "
+          className="
+            flex flex-col w-full overflow-hidden
+            bg-zinc-800 rounded-lg
+          "
         >
           <div className="relative w-full h-52">
             <Image
@@ -22,7 +24,7 @@ export default function PaginaEventos() {
           </div>
           <div className="flex-1 flex flex-col items-center p-7 gap-5 text-center">
             <span className="text-lg font-black">{evento.nome}</span>
-            <p className="flex-1 text-sm text-zinc-400 ">{evento.descricao}</p>
+            <p className="flex-1 text-sm text-zinc-400">{evento.descricao}</p>
             <QRCode
               value={JSON.stringify({ id: evento.id, senha: evento.senha })}
               className="w-44 h-44"

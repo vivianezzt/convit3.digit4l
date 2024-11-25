@@ -1,4 +1,4 @@
-import Logo from './Logo';
+import Logo from "./Logo";
 
 export interface PaginaProps {
   children: React.ReactNode;

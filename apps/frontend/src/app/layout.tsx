@@ -1,14 +1,14 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import "./globals.css";
+import { Inter } from "next/font/google";
 
 const fonte = Inter({
-  subsets: ['latin'],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: 'Seu evento começa aqui',
-  description: 'Aplicação fullstack de eventos',
+  title: "Seu Evento começa aqui",
+  description: "Aplicação Fullstack de eventos",
 };
 
 export default function RootLayout({

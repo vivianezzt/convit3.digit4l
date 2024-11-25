@@ -1,4 +1,4 @@
-import { Convidado, Evento } from "@/core";
+import { Convidado, Evento } from "core";
 import InformacoesEvento from "./InformacoesEvento";
 import AcessarViaQrCode from "./AcessarViaQrCode";
 import Estatistica from "../shared/Estatistica";
@@ -41,12 +41,12 @@ export default function DashboardEvento(props: DashboardEventoProps) {
       </button>
 
       <span className="flex py-2 text-xl font-bold text-white/80">
-        Convidados que confimaram<span className="text-green-500 ml-2">PRESENÇA</span> 
+        Convidados que confimaram PRESENÇA
       </span>
       <ListaConvidados convidados={props.presentes} />
 
       <span className="flex py-2 text-xl font-bold text-white/80">
-        Convidados que confirmaram <span className="text-red-500 ml-2">AUSÊNCIA</span>
+        Convidados que confirmaram AUSÊNCIA
       </span>
       <ListaConvidados convidados={props.ausentes} />
     </div>

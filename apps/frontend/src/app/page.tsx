@@ -1,5 +1,5 @@
-import LogoGrande from '@/components/template/LogoGrande';
-import Link from 'next/link';
+import LogoGrande from "@/components/template/LogoGrande";
+import Link from "next/link";
 
 export default function Home() {
   return (
